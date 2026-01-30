@@ -12,17 +12,6 @@
 </head>
 <body>
   <header>🧠 Mind — Live Bingo Board</header>
-
-  <iframe id="board" src="https://docs.google.com/spreadsheets/d/1lI-KSAiLmOMDg4L7OOAFdlApbbfv08eyJHGkhkWQ18A/preview?gid=1846271495"></iframe>
-
-  <script>
-    const iframe = document.getElementById('board');
-    const baseSrc = iframe.getAttribute('src');
-
-    setInterval(() => {
-      const sep = baseSrc.includes('?') ? '&' : '?';
-      iframe.src = baseSrc + sep + 't=' + Date.now();
-    }, 60000);
-  </script>
+  <iframe src="https://docs.google.com/spreadsheets/d/1lI-KSAiLmOMDg4L7OOAFdlApbbfv08eyJHGkhkWQ18A/pubhtml?gid=1846271495&single=true&widget=false&headers=false"></iframe>
 </body>
 </html>
